@@ -50,7 +50,7 @@ func printCoins(change map[coin]int) {
 }
 
 func main() {
-	amount := flag.Float64("amount", 2.44, "The amount you want to make change for")
+	amount := flag.Float64("amount", 0.00, "The amount you want to make change for")
 	flag.Parse()
 	change := calculateChange(*amount)
 	printCoins(change)
